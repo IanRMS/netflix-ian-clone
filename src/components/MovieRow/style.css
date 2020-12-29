@@ -59,7 +59,7 @@
     opacity: 1;
 }
 
-@media (mx-width: 760px) {
+@media (max-width: 760px) {
     .movieRow--left,
     .movieRow--right {
         opacity: 1;
