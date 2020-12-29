@@ -1,9 +1,9 @@
 import React, {useEffect, useState} from 'react';
 import MovieRow from './components/MovieRow';
 import Tmdb from './Tmdb';
-import './App.css';
 import FeaturedMovie from './components/FeaturedMovie';
 import Header from './components/Header';
+import './App.css';
 
 export default () => {
 
@@ -59,6 +59,12 @@ export default () => {
         Direitos de imagem para Netflix <br/>
         Dados fornecidos pelo Themoviedb.org
       </footer>
+
+      { !movieList.length &&
+        <div className="loading">
+          <img src="https://cdn.lowgif.com/small/0534e2a412eeb281-the-counterintuitive-tech-behind-netflix-s-worldwide.gif" alt="loading"/>
+        </div>
+      }
 
     </div>
   )
