@@ -18,7 +18,7 @@ export default ({title, items}) => {
         let x = scrollX - Math.round(window.innerWidth / 2.5);
         let listWidth = items.results.length * 150;
         if ((window.innerWidth - listWidth) > x) {
-            x = (window.innerWidth - listWidth) - 60;
+            x = (window.innerWidth - listWidth) - 120;
         }
         setScrollX(x);
     }

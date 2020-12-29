@@ -1,8 +1,9 @@
 import React, {useEffect, useState} from 'react';
+import FeaturedMovie from './components/FeaturedMovie';
+import Footer from './components/Footer';
+import Header from './components/Header';
 import MovieRow from './components/MovieRow';
 import Tmdb from './Tmdb';
-import FeaturedMovie from './components/FeaturedMovie';
-import Header from './components/Header';
 import './App.css';
 
 export default () => {
@@ -54,11 +55,7 @@ export default () => {
         ) )}
       </section>
 
-      <footer>
-        Feito com <span role="img" aria-label="coração">♥</span> por Ian Ribeiro. <br/>
-        Direitos de imagem para Netflix <br/>
-        Dados fornecidos pelo Themoviedb.org
-      </footer>
+      <Footer/>
 
       { !movieList.length &&
         <div className="loading">
