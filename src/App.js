@@ -6,7 +6,7 @@ import MovieRow from './components/MovieRow';
 import Tmdb from './Tmdb';
 import './App.css';
 
-export default () => {
+const App = () => {
 
   const [movieList, setMovieList] = useState([]);
   const [featuredData, setFeaturedData] = useState(null);
@@ -66,3 +66,5 @@ export default () => {
     </div>
   )
 }
+
+export default App;
